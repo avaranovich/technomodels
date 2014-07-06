@@ -3,6 +3,9 @@
   <models xmi:type="pp:RootPackage" href="plugins/megal-0.0.1-SNAPSHOT.jar#megal-0.0.1-SNAPSHOT.jar"/>
   <models xmi:type="megaL:MegaLDefinition" href="prelude.megal#/"/>
   <models xmi:type="megaL:MegaLDefinition" href="basic/java.megal#/"/>
+  <models xmi:type="megaL:MegaLDefinition" href="hibernate/hibernate.megal#/"/>
+  <models xmi:type="megaL:MegaLDefinition" href="ror/ror.megal#/"/>
+  <models xmi:type="megaL:MegaLLinking" href="ror/config.megal#/"/>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_cb1VkAUAEeSdD-zRgaPR5A" initialized="true">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.softlang.megal.sirius/description/MegaL.odesign#//@ownedViewpoints[name='MegalInstance']"/>
   </ownedViews>
