@@ -1,7 +1,7 @@
-model SQL
+model SQL configured in Config
 import Prelude
 
-SQL: Language
-HQL: Language
+SQL : Language
+HQL : Language
 
 //TODO: Think about the "correspondence" between SQL and HQL. There is a translation from HQL into SQL

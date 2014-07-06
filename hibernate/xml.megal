@@ -1,4 +1,4 @@
-model XML
+model XML configured in Config
 import Prelude
 import Classes
 
@@ -19,9 +19,4 @@ HBMMapSchema elementOf DTD
 cfg: File
 cfg elementOf HBMCfg
 
-mapping: File+
-mapping elementOf HBMMap
-
-mapping correspondsTo persistentClasses
-
-
+mapping: File

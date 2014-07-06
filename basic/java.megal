@@ -1,4 +1,4 @@
-model Java linked in Config
+model Java configured in Config
 import Prelude
 
 Java : Language

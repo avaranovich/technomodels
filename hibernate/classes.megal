@@ -1,4 +1,4 @@
-model Classes
+model Classes configured in Config
 import Prelude
 
 Java: Language

@@ -1,4 +1,4 @@
-model Prelude linked in Config
+model Prelude configured in Config
 
 // Entity types
 Set < Entity
