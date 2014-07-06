@@ -1,0 +1,5 @@
+
+heConfiguration 􏰅􏰅􏰆 RDBMS -- The configuration locates the database. 
+theConfiguration 􏰅􏰅􏰆 DatabaseDriver -- The configuration links the driver by its name. 
+theConfiguration 􏰅􏰅􏰆 SQLOR -- The configuration specifies the sql dialect. 
+theConfiguration 􏰅􏰅􏰆 theMapping -- The configuration links the mapping files.

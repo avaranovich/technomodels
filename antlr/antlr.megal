@@ -1,0 +1,40 @@
+model ANTLR
+import Prelude
+
+//TODO: use https://github.com/101companies/101simplejava/tree/master/contributions/antlr4Parser
+
+AntlrTool : Technology
+AntlrNotation : Language
+Java : Language
+?aLanguage : Language
+?aGrammar : Artifact
+?aParser : Artifact
+?anInput : Artifact
+
+// elementOf for artifacts should be a globally unique constraint
+aGrammar elementOf AntlrNotation
+aParser elementOf Java
+anInput elementOf aLanguage # aParser
+
+AntlrTool defines codeGeneration
+codeGeneration: Function[AntlrNotation -> Java]
+
+/*
+
+AntlrNotation domainOf codeGeneration
+Java rangeOf codeGeneration
+
+*/
+
+aGrammar defines aLanguage
+codeGeneration(aGrammar) |-> aParser
+
+/*
+codeGenerationApp1 : FunctionApplication
+codeGenerationApp1 elementOf codeGeneration
+aGrammar inputOf codeGenerationApp1
+aParser outputOf codeGenerationApp1
+*/
+
+anInput conformsTo aGrammar . # aParser
+

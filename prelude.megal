@@ -1,4 +1,4 @@
-model Prelude
+model Prelude linked in Config
 
 // Entity types
 Set < Entity
@@ -6,11 +6,17 @@ Artifact < Entity
 
 @color("255,204,153")
 Language < Set
+
 Technology < Entity
+
 Concept < Entity
+
 File < Artifact
+
 Folder < Artifact
+
 Function < Entity
+
 FunctionApplication < Entity
 
 // Relationship types
