@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:megaL="http://www.softlang.org/megal/MegaL" xmlns:pp="http://www.softlang.org/megal/PP" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_I4sGEAUAEeSdD-zRgaPR5A" selectedViews="_cb1VkAUAEeSdD-zRgaPR5A" version="8.1.1">
+  <models xmi:type="pp:RootPackage" href="plugins/megal-0.0.1-SNAPSHOT.jar#megal-0.0.1-SNAPSHOT.jar"/>
+  <models xmi:type="megaL:MegaLDefinition" href="prelude.megal#/"/>
+  <models xmi:type="megaL:MegaLDefinition" href="basic/java.megal#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_cb1VkAUAEeSdD-zRgaPR5A" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.softlang.megal.sirius/description/MegaL.odesign#//@ownedViewpoints[name='MegalInstance']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

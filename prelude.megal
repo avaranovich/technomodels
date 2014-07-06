@@ -1,0 +1,30 @@
+model Prelude
+
+// Entity types
+Set < Entity
+Artifact < Entity
+
+@color("255,204,153")
+Language < Set
+Technology < Entity
+Concept < Entity
+File < Artifact
+Folder < Artifact
+Function < Entity
+FunctionApplication < Entity
+
+// Relationship types
+@style("dash")
+elementOf < Entity * Set
+
+subsetOf < Set * Set
+
+partOf < Artifact * Artifact
+
+instanceOf < Concept * Concept
+
+isA < Concept * Concept
+
+conformsTo < Artifact * Artifact
+
+definitionOf < Artifact * Language

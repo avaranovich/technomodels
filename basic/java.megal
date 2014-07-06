@@ -1,0 +1,5 @@
+model Java import Prelude
+
+Java : Language
+javaProgram : File
+javaProgram elementOf Java
