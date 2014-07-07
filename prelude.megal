@@ -19,6 +19,10 @@ Function < Entity
 
 FunctionApplication < Entity
 
+elementOf < FunctionApplication * Function
+inputOf < Artifact * FunctionApplication
+outputOf < Artifact * FunctionApplication
+
 // Relationship types
 @style("dash")
 elementOf < Entity * Set
@@ -36,13 +40,13 @@ isA < Concept * Concept
 
 conformsTo < Artifact * Artifact
 
-definitionOf < Artifact * Language
-
 dependsOn < Artifact * Artifact
 dependsOn < Technology * Language
 dependsOn < Technology * Technology
+dependsOn < Function * Technology
 
 transformableIn < Language * Language
+transformedIn < Language * Language
 
 correspondsTo < File * File
 

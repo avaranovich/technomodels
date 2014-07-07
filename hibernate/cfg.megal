@@ -1,6 +1,14 @@
 model Cfg configured in Config
+import Prelude
 
-heConfiguration 􏰅􏰅􏰆 RDBMS -- The configuration locates the database. 
-theConfiguration 􏰅􏰅􏰆 DatabaseDriver -- The configuration links the driver by its name. 
-theConfiguration 􏰅􏰅􏰆 SQLOR -- The configuration specifies the sql dialect. 
-theConfiguration 􏰅􏰅􏰆 theMapping -- The configuration links the mapping files.
+theConfiguration : File
+RDBMS : Technology
+DatabaseDriver : Technology
+SQL : Language
+SQLOR : Language
+SQLOR subsetOf SQL
+
+//theConfiguration 􏰅􏰅􏰆 RDBMS -- The configuration locates the database. 
+//theConfiguration 􏰅􏰅􏰆 DatabaseDriver -- The configuration links the driver by its name. 
+//theConfiguration 􏰅􏰅􏰆 SQLOR -- The configuration specifies the sql dialect. 
+//theConfiguration 􏰅􏰅􏰆 theMapping -- The configuration links the mapping files.

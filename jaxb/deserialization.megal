@@ -11,13 +11,18 @@ import Types
 deserialize : Function[XML -> ObjectGraphs]
 xmlInputDoc : File
 xmlInputDoc elementOf XML
-initialObj : ObjectGraphs 
+
+initialObj : File
+initialObj: ObjectGraph 
 
 deserialize dependsOn OxMapper
 deserialize dependsOn xmlTypes
+
 xmlInputDoc conformsTo ooTypes
+
+finalObj : ObjectGraph
 finalObj conformsTo ooTypes
-finalObj correspondsTo xmlinputDoc
+finalObj correspondsTo xmlInputDoc
 
 deserialize(xmlInputDoc) |-> initialObj
  

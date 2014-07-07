@@ -16,6 +16,6 @@ ooTypes elementOf MappableOo
 ?problemLanguage : Language
  
 xmlTypes correspondsTo ooTypes
-xmlTypes definitionOf problemLanguage
-ooTypes definitionOf problemLanguage
+xmlTypes defines problemLanguage
+ooTypes defines problemLanguage
  

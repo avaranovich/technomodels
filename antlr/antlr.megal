@@ -3,6 +3,8 @@ import Prelude
 
 //TODO: use https://github.com/101companies/101simplejava/tree/master/contributions/antlr4Parser
 
+defines < Technology * Function
+
 AntlrTool : Technology
 AntlrNotation : Language
 Java : Language
@@ -37,5 +39,5 @@ aGrammar inputOf codeGenerationApp1
 aParser outputOf codeGenerationApp1
 */
 
-anInput conformsTo aGrammar . # aParser
+anInput conformsTo aGrammar
 

@@ -7,6 +7,10 @@ import Prelude
 
 Library < Artifact
 
+ObjectGraph < Language
+conformsTo < ObjectGraph * File
+correspondsTo < ObjectGraph * File
+
 OxMapper : Technology
 OxLibrary : Library
 XmlSchemas : Language

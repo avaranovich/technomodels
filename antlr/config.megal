@@ -1,3 +1,5 @@
 configuration Config for ANTLR
 
 jar "/technomodels/plugins/megal-0.0.1-SNAPSHOT.jar"
+
+codeGeneration="http://foo.bar"
