@@ -4,4 +4,6 @@ import Prelude
 SQL : Language
 HQL : Language
 
+HQL transformableIn SQL
+
 //TODO: Think about the "correspondence" between SQL and HQL. There is a translation from HQL into SQL

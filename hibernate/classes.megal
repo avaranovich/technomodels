@@ -17,7 +17,7 @@ apiCall partOf application
 persistentClasses: File
 
 Library < Artifact
-HibernateLib: Library
+HibernateLib : Library
 apiCall dependsOn HibernateLib
 
 application dependsOn persistentClasses

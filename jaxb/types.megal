@@ -11,7 +11,7 @@ xmlTypes : File+
 xmlTypes elementOf XmlSchemas
 
 ooTypes : File+
-ooTypes elementOf MappableOO
+ooTypes elementOf MappableOo
 
 ?problemLanguage : Language
  

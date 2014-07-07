@@ -26,6 +26,9 @@ elementOf < Entity * Set
 subsetOf < Set * Set
 
 partOf < Artifact * Artifact
+partOf < Artifact * Technology
+partOf < Technology * Technology
+partOf < Language * Technology
 
 instanceOf < Concept * Concept
 
@@ -34,3 +37,13 @@ isA < Concept * Concept
 conformsTo < Artifact * Artifact
 
 definitionOf < Artifact * Language
+
+dependsOn < Artifact * Artifact
+dependsOn < Technology * Language
+dependsOn < Technology * Technology
+
+transformableIn < Language * Language
+
+correspondsTo < File * File
+
+defines < Artifact * Language
