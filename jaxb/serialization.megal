@@ -1,0 +1,26 @@
+/*
+ * This module describes the value-level aspect of specifically serialization. (There is a related module for 
+ * specifically de-serialization. At the heart of this description is a function serialize, which is somehow derived 
+ * by the mapper from the XML types (or the corresponding OO types) such that serialization may map an object graph to 
+ * an XML document with the suitable correspondence and conformance relationships.
+ */
+model Serialization configured in Config
+import Types
+
+?serialize : Function[ObjectGraphs -> XML]
+xmlOutputFile : File
+xmlOutputFile elementOf XML
+finalObj : ObjectGraph
+finalObj elementOf ObjectGraphs
+
+serialize dependsOn OxMapper
+serialize dependsOn xmlTypes
+xmlOutputDoc conformsTo xmlTypes
+finalObj conforms to ooTypes
+finalObj correspondsTo xmloutputDoc
+
+serialize(finalObj) |-> xmlOutputDoc
+
+
+
+
