@@ -1,20 +1,20 @@
-model Classes configured in Config
+model Classes configured in ClassesConfig
 import Prelude
 
-Java: Language
-HibernatePOJO: Language
+Java : Language
+HibernatePOJO : Language
 HibernatePOJO subsetOf Java
 
 Program < File
 
-application: Program
+application : Program
 application elementOf Java
 
 Fragment < File
-apiCall: Fragment
+apiCall : Fragment
 apiCall partOf application
 
-persistentClasses: File
+persistentClasses : File+
 
 Library < Artifact
 HibernateLib : Library

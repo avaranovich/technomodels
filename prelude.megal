@@ -2,6 +2,7 @@ model Prelude configured in Config
 
 // Entity types
 Set < Entity
+
 Artifact < Entity
 
 @color("255,204,153")
@@ -19,10 +20,6 @@ Function < Entity
 
 FunctionApplication < Entity
 
-elementOf < FunctionApplication * Function
-inputOf < Artifact * FunctionApplication
-outputOf < Artifact * FunctionApplication
-
 // Relationship types
 @style("dash")
 elementOf < Entity * Set
@@ -33,6 +30,10 @@ partOf < Artifact * Artifact
 partOf < Artifact * Technology
 partOf < Technology * Technology
 partOf < Language * Technology
+
+elementOf < FunctionApplication * Function
+inputOf < Artifact * FunctionApplication
+outputOf < Artifact * FunctionApplication
 
 instanceOf < Concept * Concept
 
@@ -47,7 +48,10 @@ dependsOn < Function * Technology
 
 transformableIn < Language * Language
 transformedIn < Language * Language
+transformedIn < Artifact * Artifact
 
 correspondsTo < File * File
 
 defines < Artifact * Language
+
+linksTo < File * File

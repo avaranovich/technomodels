@@ -8,6 +8,8 @@ model DeSerialization configured in Config
 import Technology
 import Types
 
+dependsOn < Function * File
+
 deserialize : Function[XML -> ObjectGraphs]
 xmlInputDoc : File
 xmlInputDoc elementOf XML
@@ -16,7 +18,7 @@ initialObj : File
 initialObj: ObjectGraph 
 
 deserialize dependsOn OxMapper
-deserialize dependsOn xmlTypes
+deserialize dependsOn ooTypes
 
 xmlInputDoc conformsTo ooTypes
 

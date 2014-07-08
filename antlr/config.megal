@@ -1,5 +1,12 @@
-configuration Config for ANTLR
+configuration AntlrConfig for ANTLR
 
 jar "/technomodels/plugins/megal-0.0.1-SNAPSHOT.jar"
 
-codeGeneration="http://foo.bar"
+AntlrTool="http://101companies.org/wiki/Technology:ANTLR"
+Java = "http://101companies.org/wiki/Language:Java"
+
+aGrammar = "https://github.com/avaranovich/101simplejava/blob/master/contributions/antlr4Parser/src/main/antlr/Company.g4"
+aParser = "https://github.com/avaranovich/101simplejava/blob/master/contributions/antlr4Parser/src/main/java/org/softlang/company/antlr/src/main/antlr/CompanyParser.java"
+anInput = "https://github.com/avaranovich/101simplejava/blob/master/contributions/antlr4Parser/inputs/sample.Company"
+
+codeGeneration = "https://github.com/avaranovich/101simplejava/blob/master/contributions/antlr4Parser/build.gradle#L19"

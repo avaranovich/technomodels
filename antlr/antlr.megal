@@ -1,9 +1,12 @@
-model ANTLR configured in Config
+/*
+ * ANTLR Megamodel (
+ * The following 101companies contribution is used:
+ * http://101companies.org/wiki/Contribution:antlrParser 
+ * The following repository is used, that has all generated files comitted: 
+ * https://github.com/avaranovich/101simplejava/tree/master/contributions/antlr4Parser 
+ */
+model ANTLR configured in AntlrConfig
 import Prelude
-
-//TODO: use https://github.com/101companies/101simplejava/tree/master/contributions/antlr4Parser
-
-defines < Technology * Function
 
 AntlrTool : Technology
 AntlrNotation : Language
@@ -19,8 +22,10 @@ aGrammar elementOf AntlrNotation
 aParser elementOf Java
 anInput elementOf aLanguage
 
-AntlrTool defines codeGeneration
+defines < Technology * Function
+
 codeGeneration: Function[AntlrNotation -> Java]
+AntlrTool defines codeGeneration
 
 /*
 
@@ -40,4 +45,3 @@ aParser outputOf codeGenerationApp1
 */
 
 anInput conformsTo aGrammar
-

@@ -6,14 +6,13 @@
   <models xmi:type="megaL:MegaLDefinition" href="ror/ror.megal#/"/>
   <models xmi:type="megaL:MegaLLinking" href="ror/config.megal#/"/>
   <models xmi:type="megaL:MegaLLinking" href="config.megal#/"/>
-  <models xmi:type="megaL:MegaLDefinition" href="hibernate/xml.megal#/"/>
-  <models xmi:type="megaL:MegaLDefinition" href="hibernate/classes.megal#/"/>
   <models xmi:type="megaL:MegaLDefinition" href="antlr/antlr.megal#/"/>
-  <models xmi:type="megaL:MegaLLinking" href="hibernate/config.megal#/"/>
   <models xmi:type="megaL:MegaLLinking" href="antlr/config.megal#/"/>
   <models xmi:type="megaL:MegaLDefinition" href="jaxb/technology.megal#/"/>
   <models xmi:type="megaL:MegaLLinking" href="jaxb/config.megal#/"/>
   <models xmi:type="megaL:MegaLLinking" href="basic/config.megal#/"/>
+  <models xmi:type="megaL:MegaLLinking" href="hibernate/classesConfig.megal#/"/>
+  <models xmi:type="megaL:MegaLDefinition" href="hibernate/classes.megal#/"/>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_cb1VkAUAEeSdD-zRgaPR5A" initialized="true">
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_rg3KQAUcEeSllcGZQs93Ew" name="antlr">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rg3KQQUcEeSllcGZQs93Ew" source="DANNOTATION_CUSTOMIZATION_KEY">

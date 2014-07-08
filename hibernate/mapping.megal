@@ -1,9 +1,9 @@
-model Mapping configured in Config
+model Mapping configured in MappingConfig
 import Prelude
 import XML
 import SQL
 
-schema: File
-mapping defines schema
+schema : File
+mapping transformedIn schema
 schema elementOf SQL
 schema correspondsTo persistentClasses
