@@ -2,15 +2,16 @@
  * ANTLR Megamodel (
  * The following 101companies contribution is used:
  * http://101companies.org/wiki/Contribution:antlrParser 
- * The following repository is used, that has all generated files comitted: 
+ * The following repository is used, that has all generated files committed: 
  * https://github.com/avaranovich/101simplejava/tree/master/contributions/antlr4Parser 
  */
 model ANTLR configured in AntlrConfig
 import Prelude
 
-AntlrTool : Technology
-AntlrNotation : Language
+ANTLR : Technology
 Java : Language
+ANTLR.Notation : Language
+ANTLR.Generator : Function[ANTLR.Notation -> Java]
 
 ?aLanguage : Language
 ?aGrammar : Artifact
@@ -18,28 +19,24 @@ Java : Language
 ?anInput : Artifact
 
 // elementOf for artifacts should be a globally unique constraint
-aGrammar elementOf AntlrNotation
+aGrammar elementOf ANTLR.Notation
 aParser elementOf Java
 anInput elementOf aLanguage
 
-defines < Technology * Function
-
-codeGeneration: Function[AntlrNotation -> Java]
-AntlrTool defines codeGeneration
 
 /*
 
-AntlrNotation domainOf codeGeneration
-Java rangeOf codeGeneration
+ANTLR.Notation domainOf ANTLR.Generator
+Java rangeOf ANTLR.Generator
 
 */
 
 aGrammar defines aLanguage
-codeGeneration(aGrammar) |-> aParser
+ANTLR.Generator(aGrammar) |-> aParser
 
 /*
 codeGenerationApp1 : FunctionApplication
-codeGenerationApp1 elementOf codeGeneration
+codeGenerationApp1 elementOf ANTLR.Generator
 aGrammar inputOf codeGenerationApp1
 aParser outputOf codeGenerationApp1
 */
