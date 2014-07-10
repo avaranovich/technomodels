@@ -2,7 +2,7 @@
  * This is the basic module explaining the component structure and 
  * inter-language and technology dependencies for an Object/XML mapping technology.
  */
-model Technology configured in Config
+model Technology configured in JAXBConfig
 import Prelude
 
 Library < Artifact

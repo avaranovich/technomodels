@@ -32,13 +32,3 @@ Java rangeOf ANTLR.Generator
 */
 
 aGrammar defines aLanguage
-ANTLR.Generator(aGrammar) |-> aParser
-
-/*
-codeGenerationApp1 : FunctionApplication
-codeGenerationApp1 elementOf ANTLR.Generator
-aGrammar inputOf codeGenerationApp1
-aParser outputOf codeGenerationApp1
-*/
-
-anInput conformsTo aGrammar

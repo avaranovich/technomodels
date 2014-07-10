@@ -1,0 +1,31 @@
+/*
+ * Object/XML mapping may be customized by some annotation mechanism such that schema
+ * derived or authored OO types and their members are annotated with hints regarding de-serialization.
+ */
+model Annotation configured in JAXBConfig
+
+import Prelude
+import Serialization
+import DeSerialization
+
+variable Language
+Annotation
+partOf
+OoLanguage .
+variable Language
+OxAnnotation
+subsetOf
+Annotation .
+variable Fragment
++ anno
+partOf
+ooTypes .
+OxAnnotation
+partOf
+OxMapper .
+deserialize
+dependsOn
+anno .
+serialize
+dependsOn
+anno 

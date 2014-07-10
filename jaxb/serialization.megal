@@ -4,23 +4,19 @@
  * by the mapper from the XML types (or the corresponding OO types) such that serialization may map an object graph to 
  * an XML document with the suitable correspondence and conformance relationships.
  */
-model Serialization configured in Config
+model Serialization configured in JAXBConfig
 import Types
 
-?serialize : Function[ObjectGraphs -> XML]
+JAXB.Serialize : Function[ObjectGraphs -> XML]
 xmlOutputFile : File
 xmlOutputFile elementOf XML
 finalObj : ObjectGraph
 finalObj elementOf ObjectGraphs
 
-serialize dependsOn OxMapper
-serialize dependsOn xmlTypes
+JAXB.Serialize dependsOn OxMapper
+JAXB.Serialize dependsOn xmlTypes
 xmlOutputDoc conformsTo xmlTypes
 finalObj conforms to ooTypes
 finalObj correspondsTo xmloutputDoc
 
-serialize(finalObj) |-> xmlOutputDoc
-
-
-
-
+JAXB.Serialize(finalObj

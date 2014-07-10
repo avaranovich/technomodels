@@ -4,21 +4,21 @@
  * types (or the corresponding OO types) such that deserialization may map an XML document to an object graph with the suitable
  * correspondence and conformance relationships.
  */
-model DeSerialization configured in Config
+model DeSerialization configured in JAXBConfig
 import Technology
 import Types
 
 dependsOn < Function * File
 
-deserialize : Function[XML -> ObjectGraphs]
+JAXB.Deserialize : Function[XML -> ObjectGraphs]
 xmlInputDoc : File
 xmlInputDoc elementOf XML
 
 initialObj : File
 initialObj: ObjectGraph 
 
-deserialize dependsOn OxMapper
-deserialize dependsOn ooTypes
+JAXB.Deserialize dependsOn OxMapper
+JAXB.Deserialize dependsOn ooTypes
 
 xmlInputDoc conformsTo ooTypes
 
@@ -27,4 +27,3 @@ finalObj conformsTo ooTypes
 finalObj correspondsTo xmlInputDoc
 
 deserialize(xmlInputDoc) |-> initialObj
- 
