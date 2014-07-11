@@ -1,0 +1,21 @@
+/*
+ * De-serialization was already discussed in a designated module, but the derivation of the
+ * corresponding function for de-serialization was not yet explained. To this end, we need to
+ * assume actual program code which makes use of appropriate library functionality to issue
+ * de-serialization. (There is a similar module for serialization).
+ */
+ model ReadingOO configured in JAXBConfig
+ 
+ import Prelude
+ import DeSerialization
+ 
+ problemProgram : File
+ problemProgram elementOf OoLanguage
+ 
+ deserialization : Fragment
+ deserialization partOf problemProgram
+ 
+ problemProgram dependsOn ooTypes
+ deserialization realizationOf JAXB.Deserialize
+ deserialization dependsOn OxLibrary
+ 

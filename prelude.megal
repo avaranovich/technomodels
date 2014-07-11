@@ -57,3 +57,5 @@ correspondsTo < File * File
 defines < Artifact * Language
 
 linksTo < File * File
+
+realizationOf < Artifact * Function
