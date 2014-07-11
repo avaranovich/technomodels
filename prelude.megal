@@ -20,6 +20,8 @@ Function < Entity
 
 FunctionApplication < Entity
 
+Fragment < Artifact
+
 // Relationship types
 @style("dash")
 elementOf < Entity * Set

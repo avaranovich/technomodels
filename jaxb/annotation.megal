@@ -8,24 +8,14 @@ import Prelude
 import Serialization
 import DeSerialization
 
-variable Language
-Annotation
-partOf
-OoLanguage .
-variable Language
-OxAnnotation
-subsetOf
-Annotation .
-variable Fragment
-+ anno
-partOf
-ooTypes .
-OxAnnotation
-partOf
-OxMapper .
-deserialize
-dependsOn
-anno .
-serialize
-dependsOn
-anno 
+Annotation : Language
+Annotation partOf OoLanguage
+OxAnnotation : Language
+OxAnnotation subsetOf Annotation
+
+anno : Fragment+
+anno partOf ooTypes
+
+OxAnnotation partOf OxMapper
+JAXB.Serialize dependsOn anno
+JAXB.Deserialize dependsOn anno
