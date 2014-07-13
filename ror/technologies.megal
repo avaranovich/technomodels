@@ -1,35 +1,36 @@
 /*
- * This models describes technologies involved into a Rails project. An essential part of the model is the actual Ruby on Rails
- * technology, decomposed into essential parts.
+ * This models describes technologies involved into a Rails project. 
+ * An essential part of the model is the actual Ruby on Rails technology, decomposed into essential parts.
  */
 model Rails.Technologies configured in RailsConfig
 
 import Prelude
-import Rails.Concepts
+import Rails.Patterns
 
-Rails['Ruby on Rails'] : Technology
-Rails instanceOf FullStackWebApplicationFramework
+FullStackWebApplicationFramework['Full Stack Web Application Framework'] < Technology
+TemplateEngine['Template Engine'] < Technology
+RailsTemplateEngine['Rails Template Engine'] : TemplateEngine
 
-RailsTemplateEngine['Rails Template Engine'] : Technology
-RailsTemplateEngine isA TemplateEngine
+Rails['Ruby on Rails'] : FullStackWebApplicationFramework
+
 RailsTemplateEngine partOf Rails
 
 // Default template engine
-eRuby : Technology
-eRuby instanceOf RailsTemplateEngine
+eRuby : TemplateEngine
+eRuby realizationOf RailsTemplateEngine
 
-// Third-party template engines
-Mustache : Technology
-Mustache instanceOf RailsTemplateEngine
-HAML : Technology
-HAML instanceOf RailsTemplateEngine
+// Alternative third-party template engines. They are OPTIONAL in this megamodel.
+Mustache : TemplateEngine
+Mustache realizationOf RailsTemplateEngine
+HAML : TemplateEngine
+HAML realizationOf RailsTemplateEngine
 
 // Rails strictly follows REST principles
-ArchStyle['Architectural Style'] : Concept
-REST : Concept
-REST instanceOf ArchStyle
+ArchStyle['Architectural Style'] < Concept
+REST : ArchStyle
+
 // Style enforced by the framework
-Rails dependsOn REST
+Rails supports REST
 
 
 

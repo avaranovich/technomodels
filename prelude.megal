@@ -64,3 +64,6 @@ realizationOf < Artifact * Function
 variantOf < Language * Language
 
 versionOf < Language * Language
+
+// a deployment perspective, where one technology is used as a container for deployment and execution of the other one
+deploysTo < Technology * Technology

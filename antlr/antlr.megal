@@ -23,6 +23,8 @@ aGrammar elementOf ANTLR.Notation
 aParser elementOf Java
 anInput elementOf aLanguage
 
+aGrammar defines aLanguage
+ANTLR.Generator(aGrammar) |-> aParser
 
 /*
 

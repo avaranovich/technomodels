@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:megaL="http://www.softlang.org/megal/MegaL" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pp="http://www.softlang.org/megal/PP" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_I4sGEAUAEeSdD-zRgaPR5A" selectedViews="_cb1VkAUAEeSdD-zRgaPR5A" version="8.1.1">
   <models xmi:type="pp:RootPackage" href="plugins/megal-0.0.1-SNAPSHOT.jar#megal-0.0.1-SNAPSHOT.jar"/>
+  <models xmi:type="megaL:MegaLLinking" href="antlr/config.megal#/"/>
+  <models xmi:type="megaL:MegaLDefinition" href="antlr/antlr.megal#/"/>
+  <models xmi:type="megaL:MegaLDefinition" href="prelude.megal#/"/>
+  <models xmi:type="megaL:MegaLLinking" href="basic/config.megal#/"/>
+  <models xmi:type="megaL:MegaLDefinition" href="basic/java.megal#/"/>
+  <models xmi:type="megaL:MegaLLinking" href="config.megal#/"/>
   <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_cb1VkAUAEeSdD-zRgaPR5A" initialized="true">
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_rg3KQAUcEeSllcGZQs93Ew" name="antlr">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rg3KQQUcEeSllcGZQs93Ew" source="DANNOTATION_CUSTOMIZATION_KEY">

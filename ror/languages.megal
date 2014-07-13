@@ -13,7 +13,17 @@ XHTML subsetOf XHTML
 XHTML variantOf HTML
 
 Ruby : Language
-Ruby1.9 vesionOf Ruby
+Ruby1.9 versionOf Ruby
+
+TemplateLanguage < Language
+
+eRubyLanguage : TemplateLanguage
+eRubyLanguage partOf eRuby
+
+Ruby partOf eRubyLanguage
+XHTML partOf eRubyLanguage
+
+eRubyLanguage transformableIn XHTML
 
 
 
