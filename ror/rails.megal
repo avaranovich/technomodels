@@ -1,0 +1,4 @@
+model Rails configured in Config
+import Prelude
+
+ruby: Language

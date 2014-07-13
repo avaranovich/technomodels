@@ -1,0 +1,8 @@
+model Rails.Technologies configured in RailsConfig
+
+import Prelude
+
+Rails['Ruby on Rails'] : Technology
+RailsTemplateEngine['Rails Template Engine'] : Technology
+
+RailsTemplateEngine partOf Rails

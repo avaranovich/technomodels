@@ -1,4 +1,0 @@
-model RubyOnRails configured in Config
-import Prelude
-
-ruby: Language

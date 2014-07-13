@@ -1,0 +1,11 @@
+model Rails.Concepts configured in RailsConfig
+
+import Prelude
+
+DesignPattern['Design Pattern'] : Concept
+MVC['Model View Controller'] : Concept
+
+MVC instanceOf DesignPattern
+
+MVC.Controller : Concept
+MVC.Controller partOf MVC

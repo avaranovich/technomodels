@@ -1,0 +1,15 @@
+model Rails.Languages configured in RailsConfig
+
+import Prelude
+
+XML : Language
+XHTML : Language
+HTML : Language
+XHTML subsetOf XHTML
+
+XHTML variantOf HTML
+
+Ruby1.9 vesionOf Ruby
+
+
+
