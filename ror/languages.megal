@@ -1,3 +1,6 @@
+/*
+ * This model describes the languages involved in a typical Rails project.
+ */
 model Rails.Languages configured in RailsConfig
 
 import Prelude

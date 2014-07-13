@@ -1,3 +1,7 @@
+/*
+ * This model provides a structural artifact-based view on the Rails project. That it, it illustrates how conceptual entities
+ * are actually layed-out on the file system.
+ */
 model Rails configured in Config
 
 import Prelude

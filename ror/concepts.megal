@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 model Rails.Concepts configured in RailsConfig
 
 import Prelude

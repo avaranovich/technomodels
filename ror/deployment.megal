@@ -1,0 +1,13 @@
+/*
+ * This model provides a deployment perspective for the Rails project.
+ */
+model Rails.Deployment configured in RailsConfig
+
+import Rails
+
+WebServer : Technology
+?railsWebServer : WebServer
+
+WebRick : WebServer
+WebRick partOf Rails
+Rails dependsOn WebRick
