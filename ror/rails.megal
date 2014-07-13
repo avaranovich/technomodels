@@ -1,4 +1,41 @@
 model Rails configured in Config
-import Prelude
 
-ruby: Language
+import Prelude
+import Rails.Technologies
+import Rails.Languages
+import Rails.Concepts
+
+Rake : Technology
+Rake instanceOf BuildSystem
+
+Rails dependsOn Rake
+Rails dependsOn Ruby
+
+Rails dependsOn MVC
+Rails dependsOn ActiveRecord
+
+MVC.Model elementOf Ruby
+MVC.Controller elementOf Ruby
+
+request : Artifact+
+controller : File+
+
+app : Folder
+assets : Folder
+controllers : Folder
+helpers : Folder
+mailers : Folder
+models : Folder
+views : Folder
+
+assets partOf app
+controllers partOf app
+helpers partOf app
+mailers partOf app
+models partOf app
+views partOf app
+
+request : Artifact+
+controller : File+
+
+request correspondsTo controller

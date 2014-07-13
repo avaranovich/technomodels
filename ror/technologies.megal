@@ -1,8 +1,31 @@
 model Rails.Technologies configured in RailsConfig
 
 import Prelude
+import Rails.Concepts
 
 Rails['Ruby on Rails'] : Technology
-RailsTemplateEngine['Rails Template Engine'] : Technology
+Rails instanceOf FullStackWebApplicationFramework
 
+RailsTemplateEngine['Rails Template Engine'] : Technology
+RailsTemplateEngine isA TemplateEngine
 RailsTemplateEngine partOf Rails
+
+// Default template engine
+eRuby : Technology
+eRuby instanceOf RailsTemplateEngine
+
+// Third-party template engines
+Mustache : Technology
+Mustache instanceOf RailsTemplateEngine
+HAML : Technology
+HAML instanceOf RailsTemplateEngine
+
+// Rails strictly follows REST principles
+ArchStyle['Architectural Style'] : Concept
+REST : Concept
+REST instanceOf ArchStyle
+// Style enforced by the framework
+Rails dependsOn REST
+
+
+

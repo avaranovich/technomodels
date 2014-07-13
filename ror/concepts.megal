@@ -4,8 +4,22 @@ import Prelude
 
 DesignPattern['Design Pattern'] : Concept
 MVC['Model View Controller'] : Concept
+ActiveRecord['Active Record'] : Concept
+FullStackWebApplicationFramework['Full Stack Web Application Framework'] : Concept
 
 MVC instanceOf DesignPattern
 
 MVC.Controller : Concept
 MVC.Controller partOf MVC
+
+MVC.View : Concept
+MVC.View partOf MVC
+
+MVC.Model : Concept
+MVC.Model partOf MVC
+
+ActiveRecord instanceOf DesignPattern
+
+TemplateEngine['Template Engine'] : Concept
+
+
