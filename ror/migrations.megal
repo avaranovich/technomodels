@@ -1,5 +1,6 @@
 /*
- * A database aspect of a Rails project.
+ * A database aspect of a Rails project. 
+ * In fact, the usage of migrations is illustrated in this model.
  */
 model Rails.Migrations configured in RailsConfig
 
@@ -9,7 +10,8 @@ SQL : Language
 RMDBS : Technology
 DDL : Language
 
-// Rails provides a domain-specific language for managing a database schema called migrations 
+// Rails provides a domain-specific language 
+// for managing a database schema called migrations 
 Migrations : Language
 Migrations subsetOf Ruby
 

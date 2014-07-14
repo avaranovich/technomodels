@@ -16,7 +16,8 @@ Rails dependsOn WebRick
 nginx : WebServer
 nginx supports Rails
 
-// Rails project can be deployed to one or more web servers, that support Rails
+// Rails project can be deployed to one or more
+// web servers that support Rails
 webServers : WebServer+
 webServers supports Rails
 Rails deploysTo webServers

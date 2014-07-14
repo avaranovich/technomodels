@@ -1,3 +1,8 @@
+/*
+ * Design patterns that are used by Rails.
+ * These patters enforce a certain style of
+ * designing the project and organizing artifacts.
+ */
 model Rails.Patterns configured in RailsConfig
 
 import Prelude

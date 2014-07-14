@@ -1,6 +1,7 @@
 /*
  * This models describes technologies involved into a Rails project. 
- * An essential part of the model is the actual Ruby on Rails technology, decomposed into essential parts.
+ * An essential part of the model is the actual Ruby on Rails technology, 
+ * decomposed into essential parts.
  */
 model Rails.Technologies configured in RailsConfig
 
